@@ -1,0 +1,54 @@
+<!-- 
+    Doc: sample html file
+    Auth: jadon belezos
+    Date: 1/9/2023
+    Assignment: the first week basic javascript
+    Teacher: Debbie edging
+    Class:  cs-133S-01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>sample html file</title>
+    <meta charset="utf-8" lang="en">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+   <header>
+	<h1>order form app</h1> 
+    </header>
+    <main>
+	<form>
+	    <!-- not gonna lie this isnt best setup but it should work! -->
+	    <label>pineapple price:$<span class="price">12</span><input id="pineappleQty" type="number"  value="0">
+	    </label><br/>
+	    <label>apple price:$<span class="price">12</span><input id="appleQty" type="number" value="0">
+	    </label><br/>
+	    <label>orange price:$<span class="price">12</span><input id="orangeQty" type="number" value="0"></label><br/>
+
+	   <button type="button" id="subtotal">calculate the order cost</button>
+	</form>
+	<section>
+	    <h2>subtotal costs</h2>
+	    <!-- If I were making a real order page  
+		I would dynamically pull the information from a database of some kind and autogenerate the subtotal
+		 unless I had set number of items 
+
+		important to note should i be using paragraph tags or div tags?
+		i think its more of a style preference than anything.
+	    -->
+	    <p>
+	    	pineapples: $<span id="pineapplesSub">0</span><br/>
+	    	apples: $<span id="appleSub">0</span><br/>
+	    	oranges: $<span id="orangeSub">0</span><br/>
+	    </p>
+	    <p>
+	    	pretax: $<span id="pretax">0</span><br/>
+	    	tax: $<span id="tax">0</span><br/>
+		total: $<span id="total">0</span><br/>
+	    </p>
+	</section>
+    </main>
+</body>
+</html>
